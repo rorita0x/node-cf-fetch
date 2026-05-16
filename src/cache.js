@@ -1,8 +1,8 @@
 // Store our cached promises and their expiration times
 const sessionCache = new Map();
 
-// 2 hours in milliseconds
-const CACHE_TTL_MS = 2 * 60 * 60 * 1000;
+// 30 minutes in milliseconds
+const CACHE_TTL_MS = 30 * 60 * 1000;
 
 // Mock function representing your heavy generation process
 function generateSession(url, options = {}) {
