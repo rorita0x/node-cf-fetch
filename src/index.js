@@ -53,7 +53,7 @@ async function recursiveFetch(url, options, method = "get") {
     return response;
 }
 
-export async function cf_fetch(url, options={}, method='get') {
+export default async function cf_fetch(url, options={}, method='get') {
     const cycleTLS = await initCycleTLS();
 
     let response = await recursiveFetch(url, {
