@@ -1,0 +1,5 @@
+services:
+  cf-clearance-scraper:
+    image: docker.io/zfcsoftware/cf-clearance-scraper:latest
+    ports:
+      - 3000:3000
